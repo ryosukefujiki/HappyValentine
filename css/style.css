@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  color: #333;
+  font-size: 15rem;
+  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  text-align: center;
+    /* background-color: #f9f9f9;
+    color:black; */
+
+    background-image: url(../images/BackIMG.png);
+    background-size: cover;
+  color: #FCFCFC;
+    
+}
+
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+/*.happy{
+    margin-top: 75px;
+    font-size: 10rem;
+}
+.valentine{
+    margin-top: 75px;
+    font-size: 15rem;
+} */
+.title{
+    height: 250px;
+    margin-top: 75px;
+}
+.img{
+    margin: 160px auto 0;
+    width: 480px;
+    height: 250px;
+    background-image: url(../images/characterimg.png);
+    background-size: cover;
+}
+.from{
+    display: block;
+    margin-top: 90px;
+    color: #FCFCFC;
+}
+.heading {
+    display: block;
+    margin-top: 20px ;
+    color: #FCFCFC;
+}
+.heading-img{
+    margin-top: 90px;
+}
+
+.fadeInDown2 {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown2;
+ animation-name: fadeInDown2;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown2 {
+ 0% { opacity: 0; -webkit-transform: translateY(40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown2 {
+ 0% { opacity: 0; -webkit-transform: translateY(40px); -ms-transform: translateY(40px); transform: translateY(40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-40px); -ms-transform: translateY(-40px); transform: translateY(-40px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+.contents{
+    width: 90%;
+    overflow: hidden;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.works{
+    display: block;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+/* 
+
+.tile{
+    display: inline-block;
+    width: 250px;
+    height: 330px;
+    background-image: url(../images/tirol2.png);
+    background-size: contain;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 150px;
+    border: 5px solid #f9f9f9;
+    border-radius: 5px;
+}*/
+
+.item {
+  font-size: 1.2rem;
+  width: 112px;
+  margin-bottom: 60px;
+  margin-left: 30px;
+  padding: 8px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  background-color: #fff;
+    
+     position: relative;
+	overflow: hidden;
+
+
+}
+.item .image {
+  display: block;
+  width: 112px;
+  height: 116px;
+  margin: auto;
+}
+.item .name {
+  margin: 15px 9px 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-family: "Trebuchet MS", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+.item .description {
+  margin: 10px;
+  line-height: 1.5;
+}
+.item > a {
+  display: block;
+  margin: -8px -8px -11px;
+  padding: 8px 8px 11px;
+  border-radius: inherit;
+  color: #777;
+  transition: all 0.3s;
+}
+.item > a:hover {
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+.item-Daifuku{
+  border-color: #f49937;
+}
+.item-Marimo{
+  border-color: #76C047;
+}
+.item-Zaeru{
+  border-color: #FFF100;
+}
+.item-Saki{
+  border-color: skyblue;
+}
+.item-Seiya{
+    border-color: firebrick;
+}
+.item-Kako{
+    border-color: indigo;
+}
+.item-Vaio{
+    border-color: salmon;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 128px;
+    height: 170px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+    border-bottom: 3px solid;
+    border-radius: 5px;
+}
+.item-Daifuku figcaption{
+    background: rgba(224,153,55,.6);
+}
+.item-Zaeru figcaption{
+    background: rgba(226,226,124,.8);
+}
+.item-Marimo figcaption{
+    background: rgba(118,192,71,.6);
+}
+.item-Saki figcaption{
+    background: rgba(108,224,237,.6);
+}
+.item-Seiya figcaption{
+    background: rgba(142,65,45,.6);
+}
+.item-Kako figcaption{
+    background: rgba(174,108,216,.6);
+}
+.item-Vaio figcaption{
+    background: rgba(229,127,181,.6);
+}
+
+figcaption h3,
+figcaption p{
+    color: #f9f9f9;
+	position: absolute;
+    /* top:-100%; */
+	left: -100%;
+	width: 128px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+figcaption h3 {
+	top: 20px;
+    font-size: 2.5rem;
+}
+figcaption .fa {
+	top: 80px;
+    font-size: 3rem;
+}
+figcaption .before {
+    top: 120px;
+    font-size: 1.3rem;
+}
+figcaption p {
+	top: 140px;
+    font-size: 1.3rem;
+    
+}
+.item:hover figcaption {
+	opacity: 1;
+}
+.item:hover figcaption h3,
+.item:hover figcaption p {
+    /* top: 0px; */
+    left: 0px; 
+	
+}
+.item:hover figcaption h3 {
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.item:hover figcaption p {
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
+}
+
